@@ -1,0 +1,60 @@
+:root {
+    --color-primary: #181818;
+    --color-white: #fff;
+    --text-dark-color:#a3a3a3;
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+.movieCard {
+    height: 100vh;
+    position: relative;
+}
+
+.movieCard img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.movieCard figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    color: var(--color-white);
+    background: linear-gradient(90deg, #181818 10%, hsla(0, 0%, 9%, .98) 20%, hsla(0, 0%, 9%, .97) 25%, hsla(0, 0%, 9%, .95) 35%, hsla(0, 0%, 9%, .94) 40%, hsla(0, 0%, 9%, .92) 45%, hsla(0, 0%, 9%, .9) 50%, hsla(0, 0%, 9%, .87) 55%, hsla(0, 0%, 9%, .82) 60%, hsla(0, 0%, 9%, .75) 65%, hsla(0, 0%, 9%, .63) 70%, hsla(0, 0%, 9%, .45) 75%, hsla(0, 0%, 9%, .27) 80%, hsla(0, 0%, 9%, .15) 85%, hsla(0, 0%, 9%, .08) 90%, hsla(0, 0%, 9%, .03) 95%, hsla(0, 0%, 9%, 0));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+
+.display-3{
+    font-size: 4rem;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .movieCard figcaption h3{
+        font-size: 2rem;
+    }
+    .movieCard figcaption em{
+        display: none;
+    }
+    .btn.btn-large {
+        font-size: 16px;
+        min-height: 48px;
+        width: 150px;
+        padding: 10px 2em;
+    }
+    .singleMovie .movieLogo{
+        width: 200px;    
+    }
+      
+}
+
